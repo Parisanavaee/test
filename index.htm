@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>zharick shop</title>
+        <link href="style/index.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+        <script src="bootstrap/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style/fontawesome.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="titlhr mt-2"></div>
+                    <a href="about.htm"></a>
+                </div>
+            </div>
+            <div class="row p-0">
+                <div class="col-3 col-md-5 ms-4 py-3 fw-bold d-inline-flex">
+                    <div class=" titlecss fs-1">
+                        ZHARICK
+                    </div>
+                </div>
+                <div class="col-6 text-end d-none d-md-flex  pt-2 mt-4 justify-content-end">
+                    <div class="d-inline-flex mx-4 "><a href="#" class="text-decoration-none barhover pb-3 pb-md-0">home</a></div>
+                    <div class="d-inline-flex mx-4 "><a href="#" class="text-decoration-none barhover pb-3 pb-md-0">products</a></div>
+                    <div class="d-inline-flex mx-4 "><a href="about.htm" class="text-decoration-none barhover pb-3 pb-md-0">about us</a></div>
+                    <div class="d-inline-flex mx-4 "><a href="#" class="text-decoration-none barhover pb-3 pb-md-0">contact us</a></div>
+                </div>
+                <div class="col-8 text-end d-md-none d-block my-3">
+                    <div class="dropdown ">
+                        <button type="button" class="btn bg-transparent" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-bars px-4 fs-1 footerfont"></i>
+                        </button>
+                        <ul class="dropdown-menu rounded-0 w-100 mx-5 my-3">
+                            <li><a class="dropdown-item orang-hover text-center py-2 barhover" href="#">home</a></li>
+                            <li><a class="dropdown-item orang-hover text-center py-2 barhover" href="#">products</a></li>
+                            <li><a class="dropdown-item orang-hover text-center py-2 barhover" href="about.htm">about us</a></li>
+                            <li><a class="dropdown-item orang-hover text-center py-2 barhover" href="#">contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+             
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-xl-8  col-12">
+                    <div class="mb-3" id="photoid">
+                        <img id="#demo" class="img-fluid" src="image/New folder/portfolio/7.jpg">
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4 col-12 align-items-center my-3">
+                    <div class="text-black ps-md-0 ps-5 fs-1 " id="textid">
+                        
+                    </div>
+                    <div id="decid" class="ps-md-0 ps-5 text-black justify-content-center align-items-center heightcss pe-5  me-5">
+                      WELL COME...
+                    </div>
+            </div>
+            <div class="row categorirow  p-0 m-0">
+                </div>
+            </div>
+            <div class="row justify-content-center  mt-5">
+                <div class=" col-md-8 col-10">
+                    <div class="boxborder p-5">
+                        <div class="footerfont fw-bold text-center">ZHARICK STUDIO</div>
+                        <div class="text-center fw-bold pt-2 labfont text-black mt-0 fs-md-3">WHAT WE DO</div>
+                        <div class="text-center footerfont my-1">________________</div>
+                        <div class="py-4 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-5 text-center mt-5">
+                    <div class="my-5 d-grid">
+                        <a class="text-uppercase btnclass text-decoration-none d-grid rounded-5" href="validform.htm"><button class="fs-5 btn-block rounded-5 py-2">join us !</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 p-0 mb-5 mt-5">
+                    <hr class="titlhr">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="d-inline-flex mx-3 mb-3"><a class="fs-2 text-decoration-none footerfont1" href="#"><i class="fa-brands fa-facebook"></i></a></div>
+                        <div class="d-inline-flex mx-3 mb-3"><a class="fs-2 text-decoration-none footerfont1" href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="d-inline-flex mx-3 mb-3"><a class="fs-2 text-decoration-none footerfont1" href="#"><i class="fa-solid fa-location-dot"></i></a></div>
+                        <div class="d-inline-flex mx-3 mb-3"><a class="fs-2 text-decoration-none footerfont1" href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+                    </div>
+                    <div class="col-8">
+                        <div class="footerfont text-center mb-5">
+                            Copyright 2014 Cyrus Creative Studio. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            changefont=(text,hoverblock)=>{
+                text.className='hovereffect borderhover position-relative d-flex justify-content-center align-items-center';
+                hoverblock.className='';
+            }
+            backfont=(text,hoverblock)=>{
+                text.className='position-relative d-flex justify-content-center align-items-center';
+                hoverblock.className='invisible';
+            }
+            changepic=(photo,description,ttt)=>{
+                document.getElementById('photoid').innerHTML='<img class="img-fluid" src="'+photo+'">';
+                document.getElementById('decid').innerHTML=description;
+                document.getElementById('textid').innerHTML=ttt;
+            }
+            let categoriDive=document.querySelector('.categorirow');
+            let categori=[
+                {img:'image/New folder/portfolio/8.jpg',title:'dicrap',detail:'LILY LIKES TO PLAY WITH CRAYONS AND PENCILS',description:'The origin of Nature Day in Iran is rooted in Zoroastrianism. About 4,000 years ago, ‘Sidaz Be-dar’ was celebrated in ancient Iran to worship ‘Teshtar,’ the god of rain, in the hopes that the prayers offered that day would make the god overcome the drought demon and send in the rains. Over the past few centuries, the day has been stripped of its religious affiliations and is now seen more as a cultural holiday than a religious one.‘Sizdah Be-dar’ simply means “getting rid of the number 13.” In Iran, just as in many world cultures, the number 13 is feared as an ominous number. ‘Triskaidekaphobia’ is the scientific term for this fear. Iranians believe that by going out for picnics in places like parks and the countryside on the 13th day of the ‘Nowruz’ celebrations, they are discarding all their bad luck and would start the rest of the year on a good note. The last activity of the day’s celebration is generally believed to perform that task. At the end of the picnics, observers take green plant shoots grown from the beginning of the ‘Nowruz’ celebrations and release them on flowing water bodies, usually rivers or streams.Besides releasing green plant shoots on rivers, a version of the western ‘April Fool’ known as ‘Lie of the Thirteenth’ is observed on the day and typically involves playing pranks on others. Other fun activities marking the day include singing, dancing, chattering, playing games, and for the young singles, tying knots in the grass, hoping that doing so would bring them spouses — a practice that also has strong affiliations to an Iranian religious myth. Iranian foods like ‘Sekanjabin’ (a drink made from vinegar and honey) and ‘Ash-e Doogh’ (yogurt syrup) are generally consumed on this day.'},
+                {img:'image/New folder/portfolio/12.jpg',title:'events',detail:'LILY LIKES TO PLAY WITH CRAYONS AND PENCILS',description:'As far as events go, those with live music are some of the most engaging and entertaining for attendees. But without the right plan in place, they can also be the most likely to hit some bumps in the road. That’s why we put together this guide on how to plan a concert.With more elements and moving pieces than a typical event, a concert has a few more things that can go wrong at any given time. Technical malfunctions with audio-visual equipment, illnesses or injuries to musical talent, and inclement weather can all have negative effects on the experiences of everyone involved. To learn how to be best prepared for any mishaps and ensure that your concert is set up for success from the get-go, keep reading!'},
+                {img:'image/New folder/portfolio/3.jpg',title:'music',detail:'LILY LIKES TO PLAY WITH CRAYONS AND PENCILS',description:'Music is an ancient art form that began during prehistoric times and carries with it a history for each human culture throughout the world. Characteristics of music include: sound, melody, harmony, rhythm or the driving beats in a measure or section of music, structure or form, texture, and expression.'},
+                {img:'image/New folder/portfolio/4.jpg',title:'vintage',detail:'LILY LIKES TO PLAY WITH CRAYONS AND PENCILS',description:'PANDA-STYLE CHRONOBought my fourth About Vintage watch this holiday season -- the 1960 Racing Chrono, Steel, Off White and Black. I was immediately drawn to this piece as Im a fan of the classic Rolex Daytona Panda made popular by Paul Newman. This About Vintage chrono clearly takes style inspiration from this classic and it doesnt disappoint! It is substantial and comfortable on the wrist with solid and smooth movement (even for a quartz). Im very satisfied as always with the product from this brand. Ive been wearing everyday (signature stainless steel bracelet) for almost one month and have received several compliments from my watch-loving friends, who all ask about the brand. About Vintage I tell them! Thanks as always AV team!'},
+                {img:'image/New folder/portfolio/10.jpg',title:'typers',detail:'LILY LIKES TO PLAY WITH CRAYONS AND PENCILS',description:'In this technique, the typist keeps their eyes on the source copy at all times. Touch typing also involves the use of the home row method, where typists rest their wrist down, rather than lifting up and typing (which can cause carpal tunnel syndrome [citation needed]). To avoid this, typists should sit up tall, leaning slightly forward from the waist, place their feet flat on the floor in front of them with one foot slightly in front of the other, and keep their elbows close to their sides with forearms slanted slightly upward to the keyboard; fingers should be curved slightly and rest on the home row.Many touch typists also use keyboard shortcuts when typing on a computer. This allows them to edit their document without having to take their hands off the keyboard to use a mouse. An example of a keyboard shortcut is pressing the Ctrl key plus the S key to save a document as they type, or the Ctrl key plus the Z key to undo a mistake. Other shortcuts are the Ctrl key plus the C to copy and the Ctrl key and the V key to paste, and the Ctrl key and the X key to cut. Many'},
+                {img:'image/New folder/portfolio/6.jpg',title:'hotel',detail:'LILY LIKES TO PLAY WITH CRAYONS AND PENCILS',description:'Also known as: hostelWritten and fact-checked by Last Updated: May 25, 2024 • Article HistoryDubai: Burj al-ʿArab hotelDubai: Burj al-ʿArab hotelSee all mediaMay 24, 2024, 5:07 PM ET (The Star)Robots could exacerbate labour shortages in the hotel and restaurant industry, research showsBellagio Hotel and CasinoBellagio Hotel and Casino, Las Vegas.Hotel, building that provides lodging, meals, and other services to the traveling public on a commercial basis. A motel performs the same functions as a hotel but in a format designed for travelers using automobiles.Inns have existed since very ancient times to serve merchants and other travelers. In the Roman Empire hostelries called mansiones were situated along the Roman road system to accommodate travelers on government or commercial business. The commercial revival of the European Middle Ages stimulated a widespread growth of inns and hostels. Many of these were operated by monastic brotherhoods in order to guarantee haven for travelers in dangerous regions; a famous example is the hostel in the Great St. Bernard Pass in the Swiss Alps, which was founded in the 10th century by St. Bernard of Montjoux and is still operated by the community of Augustinian monks. In 13th-century China Marco Polo found an extensive system of relay houses in existence to provide lodgings for travelers and way stations for the Mongol postal service.'}
+                ]
+            for(let item of categori){
+                let div=document.createElement('div');
+                div.className='col-md-6 col-xl-4 col-12 p-0';
+
+                let imgdiv=document.createElement('div');
+                imgdiv.className='position-relative d-flex scaleclass justify-content-center align-items-center';
+                imgdiv.addEventListener("mouseover", function(){changefont(this,hoverblock)});
+                imgdiv.addEventListener("mouseout", function(){backfont(this,hoverblock)});
+
+                let image=document.createElement('img');
+                image.setAttribute('src',item.img);
+                image.className='img-fluid';
+                 
+                let absoluteDiv=document.createElement('div');
+                absoluteDiv.className='position-absolute text-center ';
+
+                let textDiv=document.createElement('div');
+                textDiv.className='text-uppercase fs-1 text-light fw-bold';
+                textDiv.innerHTML = item.title;
+
+                let hoverblock=document.createElement('div');
+                hoverblock.className='invisible';
+
+                let detailDiv=document.createElement('div');
+                detailDiv.className='text-light text-center ';
+                detailDiv.innerHTML = item.detail;
+
+                let buttonDiv=document.createElement('button');
+                buttonDiv.className=' bg-transparent px-3 my-3 border border-2 text-center ';
+                buttonDiv.addEventListener("click", function(){changepic(item.img,item.description,item.title)});
+                
+                let atag=document.createElement('a');
+                atag.setAttribute('href','#');
+                atag.className='text-decoration-none text-light text-center';
+                atag.innerHTML = 'VIEW MORE';
+
+
+                imgdiv.appendChild(image);
+                buttonDiv.appendChild(atag);
+                absoluteDiv.appendChild(textDiv);
+                hoverblock.appendChild(detailDiv);
+                hoverblock.appendChild(buttonDiv);
+                absoluteDiv.appendChild(hoverblock);
+                imgdiv.appendChild(absoluteDiv);
+                div.appendChild(imgdiv);
+                categoriDive.appendChild(div);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,166 @@
+@media all and (max-width: 979.999px){
+    .labfont{
+        font-size: 41px;
+        color: #ffffff;
+        margin-top: 10%;
+    }
+}
+@media all and (min-width: 980px){
+    .labfont{
+        font-size: 75px;
+        color: #ffffff;
+        margin-top: 10%;
+    }
+}
+.titlecss{
+    background: -webkit-linear-gradient(rgb(70, 43, 8), #a76400,rgb(43, 32, 18));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Sofia", sans-serif;
+}
+.titlecss:hover{
+    text-shadow: 1px 1px 3px #3f2600;
+}
+.titlhr{
+    border-top: solid 4px #a76400;
+}
+.hovereffect .position-absolute{ 
+    background: rgba(0, 0, 0, 0.683);
+    height: 100%;
+    width: 100%;
+    overflow:unset;
+    align-content: center;
+}
+.heightcss{
+    height: 450px;
+    align-content: center;
+    overflow-y:scroll;
+    line-height: 24px;
+    text-wrap: wrap;
+
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5f3901be;
+    border-radius: 10px;
+    border: 1px solid #fdfbf9;
+}
+::-webkit-scrollbar-track {
+    background-color: #f3f3f3;
+    border: 5px solid rgb(255, 255, 255);
+}
+::-webkit-scrollbar-button {
+    background-color: #ffffff;
+    background-repeat: no-repeat;   
+    background-size: 100%;
+    background-position: center;
+}
+
+::selection{
+    background-color: #9e60044a;
+}
+.barhover:hover{
+    border-bottom: #6e4303 solid 4px ;
+}
+.barhover{
+    color: #623d02;
+    font-size: 19px;
+    border-bottom: #ffffff solid 4px ;
+}
+.footerfont{
+    color: #503201;
+    font-size: 17px;
+}
+.footerfont1{
+    color: #784b03;
+    font-size: 17px;
+}
+.footerfont1:hover{
+    scale: 1.5;
+    transition-delay: 0.1s ;
+}
+.backcssabout1{
+    background-attachment:fixed;
+    height: 75vh;
+    width: 100%;
+    overflow: hidden;
+}
+.backcssabout2{
+    height: 100%;
+    width: 100%;
+    background-color: #37280149;
+    overflow: hidden;
+}
+.backcssabout2:hover{
+    backdrop-filter: blur(6px);
+    transition-duration: 0.3s;
+}
+/* .labfont{
+    color: #ffffff;
+    font-size: 80px;
+    margin-top: 10%;
+} */
+.labfont:hover{
+    color: #623d02;
+    scale: 1.1;
+    transition-duration: 0.2s;
+}
+.boxborder{
+    border: #613c01 solid 5px;
+}
+.btnclass,.btnclass button{
+    background-color:#503201; 
+    color: #f3f3f3;
+    border: #ffffff solid 3px;
+}
+.btnclass:hover{
+    background-color: white; 
+    color: #503201;
+    border: #3f2600 solid 3px;
+    transition-duration: 0.2s;
+}
+.btnclassform{
+    border: #3f2600 solid 5px;
+    color: #f3f3f3;
+
+}
+.btnclassform:hover{
+    border: #ffffff solid 5px;
+    transition-duration: 0.5s;
+}
+.bigback{
+    background: url(../image/610028-tron-desktop-wallpaper-2560x1440-retina.jpg) no-repeat center center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.blurclass:hover{
+    backdrop-filter: blur(10px);
+    transition-duration: 0.5s;
+    
+}
+
+.error-hover:hover{
+    background-color: rgba(185, 43, 43, 0.279);
+    cursor: pointer;
+    transition: 0.6s;
+    border-radius: 8px;
+}
+.borderclass{
+    border: #503201 5px solid;
+}
+.borderbottom{
+    border-bottom: #503201 4px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.teamhoverimg:hover{
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+.fixatachment{
+    background-attachment: fixed;
+}

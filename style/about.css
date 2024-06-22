@@ -1,0 +1,21 @@
+@media all and (max-width: 767.99px){
+    .pickback1{
+        height: 70vh;
+    }
+}
+@media all and (min-width: 768px){
+    .pickback1{
+            height: 70vh;
+        }
+}
+
+.pickback1{
+    background-image: url(../image/magic-kingdom-entrance-train-station-50th-scaled.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hover-back:hover{
+    text-shadow: 2px 2px 4px rgb(89, 88, 88) ;
+}

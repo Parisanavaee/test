@@ -1,0 +1,181 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+        <script src="bootstrap/bootstrap.bundle.min.js"></script>
+        <link href="style/index.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+       <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 ">
+                <div class="titlhr mt-2"></div>
+                <a href="about.htm"></a>
+            </div>
+        </div>
+        <div class="row p-0">
+            <div class="col-3 col-md-5 ms-4 py-3 fw-bold d-inline-flex">
+                <div class=" titlecss fs-1">
+                    ZHARICK
+                </div>
+            </div>
+            <div class="d-inline-flex col-9 col-md-6 mt-4 justify-content-end ">
+                <div class="d-inline-flex mx-4 "><a href="#" class="text-decoration-none barhover pb-3 pb-md-0">products</a></div>
+                <div class="d-inline-flex mx-4 "><a href="about.htm" class="text-decoration-none barhover pb-3 pb-md-0">about us</a></div>
+                <div class="d-inline-flex mx-4 "><a href="#" class="text-decoration-none barhover pb-3 pb-md-0">contact us</a></div>
+            </div>
+        </div>
+            <div class="row p-0 justify-content-center bigback">
+                <div class="col-12 col-md-6 mx-2 mx-md-0 align-content-center">
+                    <div class="borderclass p-5 shadow-lg blurclass rounded">
+                        <form name="sform" class="py-md-5 py-0" onsubmit="submitfunc(event)">
+                            <div class="row justify-content-center">
+                                <div class="col-5 shadow">
+                                    <label class="text-white">FIRST NAME :</label>
+                                    <input name="fname" type="text" onblur="namevalid(this,3,10)" class="rounded-0  bg-transparent  borderbottom form-control">
+                                </div>
+                                <div class="col-5 shadow">
+                                    <label class="text-white ">LAST NAME :</label>
+                                    <input name="lname" onblur="namevalid(this,5,20)" type="text" class="rounded-0  bg-transparent borderbottom form-control">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-8 shadow">
+                                    <label class="text-white">NATIONALCODE :</label>
+                                    <input name="ncode" onblur="codevalid(this,10,10)" type="text" class="rounded-0 bg-transparent borderbottom form-control">
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="row my-5 justify-content-center">
+                                <div class="col-5 shadow">
+                                    <label class="text-white">GENDER :</label><br>
+                                    <input name="gender" type="radio" class="form-check-input mx-1 " value="man">MALE
+                                    <input name="gender" type="radio" class="form-check-input mx-1" value="wman">FAMEL
+                                </div>
+                                <div class="col-5 shadow">
+                                    <label class="text-white">STATUS :</label><br>
+                                    <input type="radio" name="radioo" class="form-check-input mx-0 mx-md-1" value="single">SINGLE
+                                    <input type="radio" name="radioo" class="form-check-input mx-0 mx-md-1" value="marrid">MARRIED
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-9 mt-5">
+                                    <div class="" id="errorid"></div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-5 d-grid text-center">
+                                    <button type="submit" class="text-center bg-transparent btnclassform rounded-5 py-2"> SIGN UP </button>
+                                </div> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center  mt-5">
+                <div class="col-10 col-md-6">
+                    <div class="boxborder p-5">
+                        <div class="footerfont fw-bold text-center">ZHARICK STUDIO</div>
+                        <div class="text-center fw-bold pt-2 labfont text-black mt-0 fs-md-3">WHAT WE DO</div>
+                        <div class="text-center footerfont my-1">________________</div>
+                        <div class="py-4 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 p-0 mb-5 mt-5">
+                    <hr class="titlhr">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="d-inline-flex mx-3 mb-3"><a class="fs-2 text-decoration-none footerfont1" href="#"><i class="fa-brands fa-facebook"></i></a></div>
+                        <div class="d-inline-flex mx-3 mb-3"><a class="fs-2 text-decoration-none footerfont1" href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="d-inline-flex mx-3 mb-3"><a class="fs-2 text-decoration-none footerfont1" href="#"><i class="fa-solid fa-location-dot"></i></a></div>
+                        <div class="d-inline-flex mx-3 mb-3"><a class="fs-2 text-decoration-none footerfont1" href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+                    </div>
+                    <div class="col-8">
+                        <div class="footerfont text-center mb-5">
+                            Copyright 2014 Cyrus Creative Studio. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <script>
+            function clean(vl){
+                return vl.trim();
+            }
+            submitfunc=(e)=>{
+                radiovalue=radiovalid(sform.radioo,sform.gender);
+                codevalue=codevalid(sform.ncode,10,10);
+                lvalue=namevalid(sform.lname,5,20);
+                fvalue=namevalid(sform.fname,3,10);
+
+                if(fvalue==false || lvalue==false || codevalue==false || radiovalue==false){
+                    e.preventDefault();
+                }
+            }
+            namevalid=(obj,min,max)=>{
+                obj.value=clean(obj.value);
+                document.getElementById('errorid').innerHTML='';
+                obj.classList.remove('border-danger');
+                if(obj.value.length==''){
+                    obj.classList.add('border-danger');
+                    document.getElementById('errorid').innerHTML='<div class="text-center error-hover border border-danger" >enter your information</div>';
+                    return false;
+                }
+                if(!isNaN(obj.value)){
+                    obj.classList.add('border-danger');
+                    document.getElementById('errorid').innerHTML='<div class="text-center error-hover border border-danger" >enter charactor</div>';
+                    return false;
+                }
+                if(obj.value.length<min || obj.value.length>max){
+                    obj.classList.add('border-danger');
+                    document.getElementById('errorid').innerHTML='<div class="text-center error-hover border border-danger" >NAME IS MORE THAM 3 CHARACTOR</div>';
+                    return false;
+                }
+                else{
+                    obj.classList.add('border-success');
+                    return true;
+                }
+            }
+            radiovalid=(obj1,obj2)=>{
+                document.getElementById('errorid').innerHTML='';
+                if(obj1[0].checked==false && obj1[1].checked==false){
+                    document.getElementById('errorid').innerHTML='<div class="text-center error-hover border border-dange text-lightr" >CHOOSE ONE</div>';
+                  
+                    return false;
+                }
+                if(obj2[0].checked==false && obj2[1].checked==false){
+                    document.getElementById('errorid').innerHTML='<div class="text-center error-hover border border-danger text-light" >CHOOSE ONE</div>';
+                    return false;
+                }
+            }
+            codevalid=(obj,min,max)=>{
+                document.getElementById('errorid').innerHTML='';
+                obj.classList.remove('border-danger');
+                if(isNaN(obj.value)){
+                    obj.classList.add('border-danger');
+                    document.getElementById('errorid').innerHTML='<div class="text-center error-hover border border-danger text-light" >ENTER NUMBER</div>';
+                    return false;
+                }
+                if(obj.value.length==''){
+                    obj.classList.add('border-danger');
+                    document.getElementById('errorid').innerHTML='<div class="text-center error-hover border border-danger text-light" >ENTER YOUR INFORMATION</div>';
+                    return false;
+                }
+                if(obj.value.length<min || obj.value.length>max){
+                    obj.classList.add('border-danger');
+                    document.getElementById('errorid').innerHTML='<div class="text-center error-hover border border-danger text-light" >NATIONAL CODE LENTGH IS 9</div>';
+                    return false;
+                }
+                else{
+                    obj.classList.add('border-success');
+                }
+                return true;
+            }
+         
+       </script>
+    </body>
+</html>
